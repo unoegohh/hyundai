@@ -1,8 +1,11 @@
 import React from 'react';
 import {TouchableOpacity, Text} from 'react-native';
+import { useNavigation } from '@react-navigation/native';
+
 
 const ItemListItem = props => {
-  const {item, navigation} = props;
+  const {item} = props;
+  const navigation = useNavigation();
   return (
     <TouchableOpacity
       activeOpacity={1}
